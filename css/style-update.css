@@ -7,6 +7,10 @@
     margin: 0;
 }
 
+html{
+    font-size: 80%;
+}
+
 header h1{
     display: flex;
     flex-direction: column;
