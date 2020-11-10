@@ -16,12 +16,36 @@ header{
 }
 .user{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 15rem 15rem 15rem 15rem;
+    grid-template-rows: 15rem 15rem 15rem;
+    justify-items: center;
+    text-align: center;
+}
+.user .picture{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.pix{
+    width: 100%;
+    height: auto;
 }
 .user .namecontainer{
     grid-column-start: 1;
-    grid-column-end: 2;
+    grid-column-end: 3;
     grid-row-start: 3;
+    grid-row-end: 4;
+}
+.user .company{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
     grid-row-end: 3;
+}
+.user .address{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 4;
 }

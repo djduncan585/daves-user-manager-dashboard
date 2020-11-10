@@ -40,23 +40,22 @@ function getUsers(id) {
 
 function User(userObj) {
   let user = `<div class="user">
+  <div class="picture">
+    <img class="pix" src="generic_profile.svg">
+  </div>
   <div class="namecontainer">
     <h2 class="name">${userObj.name}</h2>
     <p class="username">${userObj.username}</p>
     <p class="email"><a href="">${userObj.email}</a></p>
-    <div class="geo">
-    <p class="lat">Lat: ${userObj.address.geo.lat}</p>
-    <p class="lng">Long: ${userObj.address.geo.lng}</p>
-  </div>
   </div>
   <div class="address">
     <p class="street">${userObj.address.street}</p>
     <p class="suite">${userObj.address.suite}</p>
     <p class="city">${userObj.address.city}</p>
     <p class="zip">${userObj.address.zip}</p>
+    <p class="phone">${userObj.phone}</p>
+    <p class="website">${userObj.website}</p>
   </div>
-  <p class="phone">${userObj.phone}</p>
-  <p class="website">${userObj.website}</p>
   <div class="company">
     <p class="name">${userObj.company.name}</p>
     <p class="catchPhrase">${userObj.company.catchPhrase}</p>
