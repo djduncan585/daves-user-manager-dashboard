@@ -1,0 +1,27 @@
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#userIDForm{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#userIDForm > label,
+#userIDForm div,
+#userIDForm > input,
+#userIDForm > button{
+    margin: 0 3px;
+}
+.user{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.user .namecontainer{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 3;
+}

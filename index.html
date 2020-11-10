@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>User Manager</title>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="index.js"></script>
+
+    <link rel="stylesheet" href="animation.css" />
+    <link rel="stylesheet" href="css/style-update.css" />
+    <script defer src="animation.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/61811/web-animations-next-2.1.4.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>User Manager Dashboard</h1>
+    </header>
+    <main>
+      <form
+        action=""
+        name="userIDForm"
+        id="userIDForm"
+        class="input"
+        onsubmit="event.preventDefault();validateForm()"
+      >
+        <label for="user"
+          >Provide a user ID<input id="user" name="user" type="text"
+        /></label>
+        <button type="submit">Submit</button>
+      </form>
+      <output class="users"> </output>
+    </main>
+    <section style="display: none">
+      <button onclick='this.parentNode.style.display ="none"'>hide</button>
+      <div class="box callback">C</div>
+      <div class="box promise">P</div>
+    </section>
+  </body>
+</html>
