@@ -76,6 +76,9 @@ function User(userObj) {
 function addUserToDash(json) {
   myUsers.push(json);
   let output = document.querySelector(".users");
+  while (output.lastChild) {
+    output.removeChild(output.lastChild);
+}
   myUsers.forEach(user => {
     output.innerHTML += User(user);
   });
